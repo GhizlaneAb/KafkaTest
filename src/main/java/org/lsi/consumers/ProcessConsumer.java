@@ -71,7 +71,7 @@ public class ProcessConsumer {
 
 
          log.info("Hellooooo"+combinedDocuments.toString());
-        combinedDocuments.toStream().to("demo2",Produced.with(Serdes.Integer(),Serdes.Long()));
+        combinedDocuments.toStream().to("demo3",Produced.with(Serdes.Integer(),Serdes.Long()));
 
 
     Topology topology=builder.build();
